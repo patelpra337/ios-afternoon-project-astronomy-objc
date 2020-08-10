@@ -20,6 +20,11 @@
 		AB225D7F24DBA1A800EB5B0E /* LSICamera.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D7E24DBA1A800EB5B0E /* LSICamera.m */; };
 		AB225D8224DBA65600EB5B0E /* LSIMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D8124DBA65600EB5B0E /* LSIMarsRover.m */; };
 		AB225D8524DBA91900EB5B0E /* LSISolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D8424DBA91900EB5B0E /* LSISolDescription.m */; };
+		AB225D8F24E1D91700EB5B0E /* LSIImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D8E24E1D91700EB5B0E /* LSIImageCollectionViewCell.m */; };
+		AB225D9124E1DD1800EB5B0E /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9024E1DD1800EB5B0E /* PhotosCollectionViewController.swift */; };
+		AB225D9324E1DD4900EB5B0E /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9224E1DD4900EB5B0E /* PhotoDetailViewController.swift */; };
+		AB225D9624E1DE5000EB5B0E /* LSIMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9524E1DE5000EB5B0E /* LSIMarsRoverClient.m */; };
+		AB225D9824E1E05A00EB5B0E /* MarsPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9724E1E05A00EB5B0E /* MarsPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,14 @@
 		AB225D8124DBA65600EB5B0E /* LSIMarsRover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIMarsRover.m; sourceTree = "<group>"; };
 		AB225D8324DBA91900EB5B0E /* LSISolDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSISolDescription.h; sourceTree = "<group>"; };
 		AB225D8424DBA91900EB5B0E /* LSISolDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISolDescription.m; sourceTree = "<group>"; };
+		AB225D8824E1D80700EB5B0E /* Astronomy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Astronomy-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB225D8D24E1D91700EB5B0E /* LSIImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIImageCollectionViewCell.h; sourceTree = "<group>"; };
+		AB225D8E24E1D91700EB5B0E /* LSIImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIImageCollectionViewCell.m; sourceTree = "<group>"; };
+		AB225D9024E1DD1800EB5B0E /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		AB225D9224E1DD4900EB5B0E /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		AB225D9424E1DE5000EB5B0E /* LSIMarsRoverClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIMarsRoverClient.h; sourceTree = "<group>"; };
+		AB225D9524E1DE5000EB5B0E /* LSIMarsRoverClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIMarsRoverClient.m; sourceTree = "<group>"; };
+		AB225D9724E1E05A00EB5B0E /* MarsPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhoto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +91,10 @@
 		AB225D3E24DB799700EB5B0E /* Astronomy */ = {
 			isa = PBXGroup;
 			children = (
+				AB225D8C24E1D87200EB5B0E /* Operations */,
+				AB225D8B24E1D85300EB5B0E /* Networking */,
+				AB225D8A24E1D84500EB5B0E /* View Controllers */,
+				AB225D8924E1D83D00EB5B0E /* Views */,
 				AB225D7C24DBA16000EB5B0E /* Model */,
 				AB225D5024DB799800EB5B0E /* Info.plist */,
 				AB225D5824DB79DB00EB5B0E /* LambdaSDK */,
@@ -110,6 +127,7 @@
 				AB225D5124DB799800EB5B0E /* main.m */,
 				AB225D4324DB799700EB5B0E /* SceneDelegate.m */,
 				AB225D4B24DB799800EB5B0E /* Assets.xcassets */,
+				AB225D8824E1D80700EB5B0E /* Astronomy-Bridging-Header.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -132,8 +150,43 @@
 				AB225D8124DBA65600EB5B0E /* LSIMarsRover.m */,
 				AB225D8324DBA91900EB5B0E /* LSISolDescription.h */,
 				AB225D8424DBA91900EB5B0E /* LSISolDescription.m */,
+				AB225D9724E1E05A00EB5B0E /* MarsPhoto.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AB225D8924E1D83D00EB5B0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB225D8D24E1D91700EB5B0E /* LSIImageCollectionViewCell.h */,
+				AB225D8E24E1D91700EB5B0E /* LSIImageCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB225D8A24E1D84500EB5B0E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB225D9024E1DD1800EB5B0E /* PhotosCollectionViewController.swift */,
+				AB225D9224E1DD4900EB5B0E /* PhotoDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AB225D8B24E1D85300EB5B0E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AB225D9424E1DE5000EB5B0E /* LSIMarsRoverClient.h */,
+				AB225D9524E1DE5000EB5B0E /* LSIMarsRoverClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AB225D8C24E1D87200EB5B0E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,13 +262,18 @@
 				AB225D6324DB79DB00EB5B0E /* URL+Secure.swift in Sources */,
 				AB225D6024DB79DB00EB5B0E /* LSILog.m in Sources */,
 				AB225D8524DBA91900EB5B0E /* LSISolDescription.m in Sources */,
+				AB225D9124E1DD1800EB5B0E /* PhotosCollectionViewController.swift in Sources */,
 				AB225D4124DB799700EB5B0E /* AppDelegate.m in Sources */,
+				AB225D9624E1DE5000EB5B0E /* LSIMarsRoverClient.m in Sources */,
+				AB225D9324E1DD4900EB5B0E /* PhotoDetailViewController.swift in Sources */,
 				AB225D5224DB799800EB5B0E /* main.m in Sources */,
 				AB225D8224DBA65600EB5B0E /* LSIMarsRover.m in Sources */,
 				AB225D6224DB79DB00EB5B0E /* LSIFileHelper.m in Sources */,
 				AB225D4424DB799700EB5B0E /* SceneDelegate.m in Sources */,
 				AB225D6124DB79DB00EB5B0E /* LSIErrors.m in Sources */,
 				AB225D7F24DBA1A800EB5B0E /* LSICamera.m in Sources */,
+				AB225D8F24E1D91700EB5B0E /* LSIImageCollectionViewCell.m in Sources */,
+				AB225D9824E1E05A00EB5B0E /* MarsPhoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
