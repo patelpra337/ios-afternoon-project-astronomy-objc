@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,10 +21,10 @@
 		AB225D8224DBA65600EB5B0E /* LSIMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D8124DBA65600EB5B0E /* LSIMarsRover.m */; };
 		AB225D8524DBA91900EB5B0E /* LSISolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D8424DBA91900EB5B0E /* LSISolDescription.m */; };
 		AB225D8F24E1D91700EB5B0E /* LSIImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D8E24E1D91700EB5B0E /* LSIImageCollectionViewCell.m */; };
-		AB225D9124E1DD1800EB5B0E /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9024E1DD1800EB5B0E /* PhotosCollectionViewController.swift */; };
 		AB225D9324E1DD4900EB5B0E /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9224E1DD4900EB5B0E /* PhotoDetailViewController.swift */; };
 		AB225D9624E1DE5000EB5B0E /* LSIMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9524E1DE5000EB5B0E /* LSIMarsRoverClient.m */; };
 		AB225D9824E1E05A00EB5B0E /* MarsPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9724E1E05A00EB5B0E /* MarsPhoto.swift */; };
+		ABFFEE7C24E38B160032C444 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB225D9024E1DD1800EB5B0E /* PhotosCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +215,7 @@
 		AB225D3424DB799700EB5B0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSI;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Crus Technologies";
 				TargetAttributes = {
@@ -224,7 +225,7 @@
 				};
 			};
 			buildConfigurationList = AB225D3724DB799700EB5B0E /* Build configuration list for PBXProject "Astronomy" */;
-			compatibilityVersion = "Xcode 11.4";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -262,7 +263,7 @@
 				AB225D6324DB79DB00EB5B0E /* URL+Secure.swift in Sources */,
 				AB225D6024DB79DB00EB5B0E /* LSILog.m in Sources */,
 				AB225D8524DBA91900EB5B0E /* LSISolDescription.m in Sources */,
-				AB225D9124E1DD1800EB5B0E /* PhotosCollectionViewController.swift in Sources */,
+				ABFFEE7C24E38B160032C444 /* PhotosCollectionViewController.swift in Sources */,
 				AB225D4124DB799700EB5B0E /* AppDelegate.m in Sources */,
 				AB225D9624E1DE5000EB5B0E /* LSIMarsRoverClient.m in Sources */,
 				AB225D9324E1DD4900EB5B0E /* PhotoDetailViewController.swift in Sources */,
@@ -349,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

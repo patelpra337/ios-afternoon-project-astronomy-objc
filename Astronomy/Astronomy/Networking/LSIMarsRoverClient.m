@@ -8,8 +8,9 @@
 
 #import "LSIMarsRoverClient.h"
 #import "Astronomy-Swift.h"
-#import "LSIMarsRover.h"
 #import "LSIErrors.h"
+#import "LSIMarsRover.h"
+
 
 //https://api.nasa.gov/mars-photos/api/v1/manifests/curiosity?api_key=xzmUahFwDGPpByWDNsKViE2p0cMIPU47PTee9xJd
 static NSString *const MarsRoverAPIBaseURLString = @"https://api.nasa.gov/mars-photos/api/v1";
@@ -127,7 +128,7 @@ static NSString *const APIKey = @"xzmUahFwDGPpByWDNsKViE2p0cMIPU47PTee9xJd";
         completionHandler(nil, error);
         return;
     }
-        
+    
     [[session dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             NSLog(@"Error fetching photo: %@", error);
@@ -165,8 +166,8 @@ static NSString *const APIKey = @"xzmUahFwDGPpByWDNsKViE2p0cMIPU47PTee9xJd";
 {
     NSURL *baseURL = [NSURL URLWithString:MarsRoverAPIBaseURLString];
     NSURL *queryURL = [[baseURL
-                         URLByAppendingPathComponent:@"manifests"]
-                        URLByAppendingPathComponent:roverName];
+                        URLByAppendingPathComponent:@"manifests"]
+                       URLByAppendingPathComponent:roverName];
     NSURLComponents *queryURLComponents = [NSURLComponents componentsWithURL:queryURL resolvingAgainstBaseURL:YES];
     [queryURLComponents setQueryItems:@[[NSURLQueryItem queryItemWithName:@"api_key" value:APIKey]]];
     return [queryURLComponents URL];

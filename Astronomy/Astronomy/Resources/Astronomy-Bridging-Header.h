@@ -12,7 +12,6 @@
 
 #endif /* Astronomy_Bridging_Header_h */
 
-#import "LSICache.h"
 #import "LSICamera.h"
 #import "LSIMarsRover.h"
 #import "LSISolDescription.h"
